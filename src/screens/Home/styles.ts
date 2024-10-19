@@ -37,6 +37,7 @@ export const styles = StyleSheet.create({
   },
 
   button: {
+    flexDirection: 'row',
     marginHorizontal: 15,
     marginTop: 40,
     height: 60,
@@ -47,6 +48,7 @@ export const styles = StyleSheet.create({
   },
 
   buttonText: {
+    marginRight: 10,
     color: '#0A0A0A',
     fontSize: 40,
     fontWeight: 'bold'
@@ -61,4 +63,12 @@ export const styles = StyleSheet.create({
     borderColor: borderColor,
     borderWidth: 1,
   },
+
+  listEmptyText: {
+    color: '#E0E0E0',
+    fontSize: 20,
+    textAlign: 'center',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
 })

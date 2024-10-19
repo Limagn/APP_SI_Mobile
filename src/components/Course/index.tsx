@@ -6,7 +6,6 @@ import {
 import { styles } from "./styles";
 import Entypo from '@expo/vector-icons/Entypo';
 
-const permitedCourses = ["PM I", "PM II", "LPW II", "BD", "LOG", "POO", "ALG"]
 
 type CoursesProps = {
   idCourse: string;
@@ -15,17 +14,16 @@ type CoursesProps = {
   onRemove?: () => void;
 }
 
-// {idCourse, courseHours, teacher, onRemove}: CoursesProps
-export function Course() {
+export function Course({idCourse, courseHours, teacher, onRemove}: CoursesProps) {
   return (
     <View style={styles.course}>
       <Text style={styles.listText}>
-          PM I - 80h - Luiz Cláudio
+          {idCourse} - {courseHours}h - {teacher}
       </Text>
 
       <TouchableOpacity 
           style={styles.listButton}
-          // onPress={onRemove}
+          onPress={onRemove}
       >
           <Text style={styles.listButtonText}>
             <Entypo 
