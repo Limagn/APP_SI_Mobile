@@ -39,7 +39,7 @@ export const styles = StyleSheet.create({
   button: {
     marginHorizontal: 15,
     marginTop: 40,
-    height: 80,
+    height: 60,
     borderRadius: 10,
     backgroundColor: '#00FFFF',
     justifyContent: 'center',
@@ -55,14 +55,10 @@ export const styles = StyleSheet.create({
   list: {
     margin: 15,
     marginTop: 50,
-    paddingLeft: 15,
-    height: 320,
+    padding: 10,
+    height: 340,
     backgroundColor: '#141414',
     borderColor: borderColor,
     borderWidth: 1,
   },
-
-  listText: {
-    color: textColor,
-  }
 })
